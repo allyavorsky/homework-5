@@ -24,4 +24,4 @@
 
 ## Посилання
 
-[GitHub Pages Demo](https://github.com/allyavorsky/homework-5.git)
+[GitHub Pages Demo](https://allyavorsky.github.io/homework-5/)
