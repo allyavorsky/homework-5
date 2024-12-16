@@ -13,40 +13,43 @@
   <main>
 
     <section>
-      <h1>Homework 5</h1>
-      
-      <!-- селектор тегу -->
-      <div>Тег `div`, специфічність: 0,0,0,1</div>
+      <div class="container">
+        <h1>Homework 5</h1>
 
-      <!-- селектор класу -->
-      <p class="example">Клас `.example`, специфічність: 0,0,1,0</p>
+        <!-- селектор тегу -->
+        <div>Тег `div`, специфічність: 0,0,0,1</div>
 
-      <!-- селектор id -->
-      <div id="unique-1">ID `#unique`, специфічність: 0,1,0,0</div>
+        <!-- селектор класу -->
+        <p class="example">Клас `.example`, специфічність: 0,0,1,0</p>
 
-      <!-- вбудований стиль -->
-      <div style="color: #036ec1;">Inline стиль, специфічність: 1,0,0,0</div>
+        <!-- селектор id -->
+        <div id="unique-1">ID `#unique`, специфічність: 0,1,0,0</div>
 
-      <!-- комбінований селектор -->
-      <div class="example">Клас + тег `div.example`, специфічність: 0,0,1,1</div>
+        <!-- вбудований стиль -->
+        <div style="color: #036ec1;">Inline стиль, специфічність: 1,0,0,0</div>
 
-      <!-- ідентифікатор з класом -->
-      <div id="unique-2" class="example">ID + клас `#unique.example`, специфічність: 0,1,1,0</div>
+        <!-- комбінований селектор -->
+        <div class="example">Клас + тег `div.example`, специфічність: 0,0,1,1</div>
 
-      <!-- складні селектори -->
-      <div>
-        <p class="nested">Вкладені селектори `div p.nested`, специфічність: 0,0,1,1</p>
-        <span class="nested">Дочірній селектор `div > span.nested`, специфічність: 0,0,1,1</span>
-      </div>
+        <!-- ідентифікатор з класом -->
+        <div id="unique-2" class="example">ID + клас `#unique.example`, специфічність: 0,1,1,0</div>
 
-      <!-- послідовність -->
-      <ul>
-        <li class="item">Послідовність `ul li.item`, специфічність: 0,0,1,1</li>
-      </ul>
+        <!-- складні селектори -->
+        <div>
+          <p class="nested">Вкладені селектори `div p.nested`, специфічність: 0,0,1,1</p>
+          <span class="nested">Дочірній селектор `div > span.nested`, специфічність: 0,0,1,1</span>
+        </div>
 
-      <!-- комбінація -->
-      <div>
-        <span class="example" id="combination">Комбінація `div span.example#combination`, специфічність: 0,1,1,1</span>
+        <!-- послідовність -->
+        <ul>
+          <li class="item">Послідовність `ul li.item`, специфічність: 0,0,1,1</li>
+        </ul>
+
+        <!-- комбінація -->
+        <div>
+          <span class="example" id="combination">Комбінація `div span.example#combination`, специфічність:
+            0,1,1,1</span>
+        </div>
       </div>
     </section>
 
