@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 4</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- селектор тегу -->
+  <div>Тег `div`, специфічність: 0,0,0,1</div>
+
+  <!-- селектор класу -->
+  <p class="example">Клас `.example`, специфічність: 0,0,1,0</p>
+
+  <!-- селектор id -->
+  <div id="unique-1">ID `#unique`, специфічність: 0,1,0,0</div>
+
+  <!-- вбудований стиль -->
+  <div style="color: #036ec1;">Inline стиль, специфічність: 1,0,0,0</div>
+
+  <!-- комбінований селектор -->
+  <div class="example">Клас + тег `div.example`, специфічність: 0,0,1,1</div>
+
+  <!-- ідентифікатор з класом -->
+  <div id="unique-2" class="example">ID + клас `#unique.example`, специфічність: 0,1,1,0</div>
+
+  <!-- складні селектори -->
+  <div>
+    <p class="nested">Вкладені селектори `div p.nested`, специфічність: 0,0,1,1</p>
+    <span class="nested">Дочірній селектор `div > span.nested`, специфічність: 0,0,1,1</span>
+  </div>
+
+  <!-- послідовність -->
+  <ul>
+    <li class="item">Послідовність `ul li.item`, специфічність: 0,0,1,1</li>
+  </ul>
+
+  <!-- комбінація -->
+  <div>
+    <span class="example" id="combination">Комбінація `div span.example#combination`, специфічність: 0,1,1,1</span>
+  </div>
+
+</body>
+
+</html>
