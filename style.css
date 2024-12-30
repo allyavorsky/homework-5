@@ -1,0 +1,45 @@
+/* селектор тегу */
+div {
+  color: blue;
+}
+
+/* селектор класу */
+.example {
+  color: red;
+}
+
+/* селектор id */
+#unique-1 {
+  color: green;
+}
+
+/* inline стиль: у HTML */
+
+/* комбінований селектор */
+div.example {
+  color: purple;
+}
+
+/* селектор id з класом */
+#unique-2.example {
+  color: orange;
+}
+
+/* вкладені селектори */
+div p.nested {
+  color: teal;
+}
+
+div > span.nested {
+  color: pink;
+}
+
+/* послідовність */
+ul li.item {
+  color: brown;
+}
+
+/* комбінація */
+div span.example#combination {
+  color: violet;
+}
